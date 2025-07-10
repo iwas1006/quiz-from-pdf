@@ -21,7 +21,7 @@ export default function Home() {
   const [showResult, setShowResult] = useState(false);
 
   useEffect(() => {
-    fetch("/questions.json")
+    fetch("/sample-questions.json")
       .then((res) => res.json())
       .then((data) => setQuestions(data));
   }, []);
